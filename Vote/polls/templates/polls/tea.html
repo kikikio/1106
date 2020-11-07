@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<title>投票系统</title>
+<style type="text/css">
+    body{
+        margin:0;
+	    padding: 0;
+	    font-family: sans-serif;
+	    background: url(bg.jpg);
+	    background-size: cover;
+    }
+    #wrap h3
+    {
+        color: #fff;
+        text-align: center;
+    }
+    *{padding: 0;margin: 0;}
+    #wrap{margin: 50px auto; width:600px; text-align: center;}
+    .person{position: relative; margin:40px;  float: left;}
+    .person h4,
+    .person p, 
+    .person button{margin-bottom: 5px;}
+    .person h4{color: blue;}
+    .person span{color: red;}
+    .person button:hover{cursor: pointer; font-weight: bold;}
+    .clear{clear: both;}
+</style>
+
+</head>
+<body>
+<div id="wrap">
+<h3>查看投票结果</h3>
+    <div class="person">
+        <h4>one</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="person">
+        <h4>two</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="person">
+        <h4>three</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="person">
+        <h4>four</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="person">
+        <h4>five</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="person">
+        <h4>six</h4>
+        <p>总票数： <span>0</span> 票</p>
+        <!--<button>给它投票</button>-->
+    </div>
+    <div class="clear"></div>
+    <input type="submit" name="" value="返回" onclick="getStr()">
+</div>
+<script type="text/javascript">
+    
+    window.onload = function(){
+        
+    };
+    function getStr(){
+                window.location.href = "login.html";
+    }
+</script>
