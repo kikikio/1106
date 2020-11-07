@@ -1,4 +1,11 @@
 <h1>{{ question.question_text }}</h1>
+<head>
+    <meta charset='utf-8'>
+    <title>Vote Result</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <script>
+    </script>
+</head>
 
 <ul>
 {% for choice in question.choice_set.all %}

@@ -1,9 +1,25 @@
+<!-- <!doctype html>
+<head>
+    <title>Question List</title>
+    <link rel="stylesheet" href="Vote\polls\templates\static\style.css">
+</head> -->
+<head>
+    <meta charset='utf-8'>
+    <title>Question List</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <script>
+    </script>
+</head>
+<body>
 {% if latest_question_list %}
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
+    <h1>Question List</h1>
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        <h2><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+</body>
